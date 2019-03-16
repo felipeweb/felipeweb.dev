@@ -10,7 +10,7 @@ blog  = ":slug"
 
 [params]
 author = "Felipeweb"
-keywords = ["Golang (Gopher)", "Software Architecture", "Agile", "Lean", "Java"]
+keywords = ["Golang (Gopher)", "Software Architecture", "Cloud Computing", "Agile", "Lean", "Java"]
 avatar = "img/avatar.jpg"
 resume = "resume.pdf"
 dateform = "Jan 2, 2006"
