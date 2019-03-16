@@ -1,6 +1,6 @@
 baseURL = "https://felipeweb.dev/"
 languageCode = "en-us"
-disqusShortname = "felipeweb"
+disqusShortname = "felipewebcloud"
 title = "Felipeweb"
 theme = "moti"
 
@@ -36,6 +36,16 @@ label = "Address"
 value = "Brazil, São Paulo, SP"
 
 [[params.projects]]
+name = "Go CDK"
+desc = "The Go Cloud Development Kit (Go CDK): A library and tools for open cloud development in Go."
+link = "https://gocloud.dev/"
+
+[[params.projects]]
+name = "Go Config"
+desc = "A package that helps load app configuration"
+link = "https://github.com/crgimenes/goconfig/"
+
+[[params.projects]]
 name = "Vim Bootstrap"
 desc = "A generator which provides a simple method of generating a .vimrc configuration for vim"
 link = "https://vim-bootstrap.com/"
@@ -59,11 +69,6 @@ link = "https://github.com/gofn/gofn/"
 name = "Tsuru"
 desc = "Open source, extensible and Docker-based Platform as a Service (PaaS)."
 link = "https://tsuru.io/"
-
-[[params.projects]]
-name = "Go CDK"
-desc = "The Go Cloud Development Kit (Go CDK): A library and tools for open cloud development in Go."
-link = "https://gocloud.dev/"
 
 [[params.projects]]
 name = "Osin MySQL"
