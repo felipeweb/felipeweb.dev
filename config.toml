@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313"
+baseURL = "https://felipeweb.dev"
 languageCode = "en-us"
 disqusShortname = "felipeweb"
 title = "Felipeweb"
