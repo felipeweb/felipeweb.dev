@@ -18,7 +18,7 @@ lang = "en"
 footertext = "written by felipeweb"
 googleAnalytics = "UA-57220118-3"
 about = """
-I’m currently a Tech Lead at Nuveo.
+I am Felipe Oliveira and I am currently a Tech Lead at Nuveo.
 """
 
 [params.social]
