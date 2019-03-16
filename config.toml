@@ -1,0 +1,81 @@
+baseURL = "http://localhost:1313"
+languageCode = "en-us"
+disqusShortname = "felipeweb"
+title = "Felipeweb"
+theme = "moti"
+
+[permalinks]
+fixed = ":title/"
+blog  = ":slug"
+
+[params]
+author = "Felipeweb"
+keywords = ["Golang (Gopher)", "Software Architecture", "Agile", "Lean", "Java"]
+avatar = "img/avatar.jpg"
+resume = "resume.pdf"
+dateform = "Jan 2, 2006"
+lang = "en"
+footertext = "written by felipeweb"
+googleAnalytics = "UA-57220118-3"
+about = """
+I’m currently a Tech Lead at Nuveo.
+"""
+
+[params.social]
+linkedin      = "felipewebcloud"
+twitter       = "_felipeweb"
+github        = "felipeweb"
+
+[[params.info]]
+label = "Email"
+value = "felipeweb.programador@gmail.com"
+link = "mailto:felipeweb.programador@gmail.com"
+
+[[params.info]]
+label = "Address"
+value = "Brazil, São Paulo, SP"
+
+[[params.projects]]
+name = "Vim Bootstrap"
+desc = "A generator which provides a simple method of generating a .vimrc configuration for vim"
+link = "https://vim-bootstrap.com/"
+
+[[params.projects]]
+name = "Awesome Go"
+desc = "A curated list of awesome Go frameworks, libraries and software"
+link = "https://awesome-go.com/"
+
+[[params.projects]]
+name = "Prest"
+desc = "An HTTP for any postgreSQL"
+link = "https://postgres.rest/"
+
+[[params.projects]]
+name = "Gofn"
+desc = "Function process via docker provider (serverless minimalist)"
+link = "https://github.com/gofn/gofn/"
+
+[[params.projects]]
+name = "Tsuru"
+desc = "Open source, extensible and Docker-based Platform as a Service (PaaS)."
+link = "https://tsuru.io/"
+
+[[params.projects]]
+name = "Go CDK"
+desc = "The Go Cloud Development Kit (Go CDK): A library and tools for open cloud development in Go."
+link = "https://gocloud.dev/"
+
+[[params.projects]]
+name = "Osin MySQL"
+desc = "The official MySQL backend for Osin library"
+link = "https://github.com/felipeweb/osin-mysql/"
+
+[[params.projects]]
+name = "HTML Render"
+desc = "A package to manipulate golang HTML templates easier"
+link = "https://github.com/felipeweb/htmlrender/"
+
+[[params.projects]]
+name = "Mercurius"
+desc = "Golang web framework"
+link = "https://github.com/novatrixtech/mercurius/"
