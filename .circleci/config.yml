@@ -1,0 +1,43 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: cibuilds/hugo
+    steps:
+      - checkout
+      - run:
+          name: Build site
+          command: hugo
+      - persist_to_workspace:
+          root: ./
+          paths: public
+  deploy:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ./
+      - run:
+          name: Install and configure dependencies
+          command: |
+            sudo npm install -g gh-pages
+            git config user.email "felipeweb.programador@gmail.com"
+            git config user.name "felipeweb"
+      - run:
+          name: deploy site
+          command: gh-pages --dotfiles --repo https://$GITHUB_TOKEN@github.com/felipeweb/felipeweb.dev.git --message "[skip ci] update site" --dist ./public
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
