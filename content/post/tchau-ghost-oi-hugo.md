@@ -1,5 +1,5 @@
 +++
-date = "2015-07-10"
+date = "2016-07-10"
 title = "Tchau Ghost. Oi Hugo!"
 tags = ["golang"]
 +++
