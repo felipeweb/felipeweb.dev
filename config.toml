@@ -1,6 +1,7 @@
 baseURL = "https://felipeweb.dev/"
 languageCode = "en-us"
 disqusShortname = "felipewebcloud"
+googleAnalytics = "UA-57220118-3"
 title = "Felipeweb"
 theme = "moti"
 
@@ -16,7 +17,6 @@ resume = "resume.pdf"
 dateform = "Jan 2, 2006"
 lang = "en"
 footertext = "written by felipeweb"
-googleAnalytics = "UA-57220118-3"
 about = """
 I am Felipe Oliveira and I am currently a Tech Lead at Nuveo.
 """
