@@ -20,11 +20,6 @@ googleAnalytics = "UA-57220118-3"
 about = """
 I am Felipe Oliveira and I am currently a Tech Lead at Nuveo.
 """
-[privacy.googleAnalytics]
-disabled = false
-respectDoNotTrack = true
-anonymizeIP = true
-useSessionStorage = true
 
 [params.social]
 linkedin      = "felipewebcloud"
