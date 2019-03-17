@@ -17,7 +17,6 @@
   </div>
 </div>
 <!-- Footer -->
-{{ template "_internal/google_analytics_async.html" . }}
 <!-- JS - CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -34,6 +33,15 @@
 <script src="{{ .Site.BaseURL }}js/mobile-menu.js?hash={{ $staticHash }}"></script>
 <script src="{{ .Site.BaseURL }}js/mbclicker.min.js?hash={{ $staticHash }}"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{.Site.GoogleAnalytics}}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', '{{.Site.GoogleAnalytics}}');
+</script>
 </body>
 
 </html>
