@@ -100,7 +100,7 @@ jobs:
           name: Install and configure dependencies
           command: |
             sudo npm install -g gh-pages
-            git config user.email "felipeweb.programador@gmail.com"
+            git config user.email "fpo@felipeweb.dev"
             git config user.name "felipeweb"
       - run:
           name: deploy site
