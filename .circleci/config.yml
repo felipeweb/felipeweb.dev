@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: Build site
-          command: HUGO_ENV=production hugo -v -s
+          command: HUGO_ENV=production hugo -v
       - persist_to_workspace:
           root: ./
           paths: public
