@@ -28,8 +28,8 @@ github        = "felipeweb"
 
 [[params.info]]
 label = "Email"
-value = "felipeweb.programador@gmail.com"
-link = "mailto:felipeweb.programador@gmail.com"
+value = "fpo@felipeweb.dev"
+link = "mailto:fpo@felipeweb.dev"
 
 [[params.info]]
 label = "Address"
