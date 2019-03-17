@@ -61,7 +61,7 @@
     {{$post := where .Data.Pages.ByPublishDate.Reverse "Section" "post" }}
     {{ range first 3 $post }}
     <div class="col-md-4">
-      <a href="blog.html">
+      <a href="posts.html">
         <div class="post-cards__card">
           <div class="post-cards__info">
             <p class="post-cards__date">{{ .Date.Format .Site.Params.dateform }}</p>
