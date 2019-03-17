@@ -1,5 +1,5 @@
 +++
-date = "2019-03-16"
+date = "2019-03-17"
 title = "Deployando seu site em Hugo no Github Pages com Circle CI"
 tags = ["Devops"]
 +++
