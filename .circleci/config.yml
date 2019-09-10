@@ -27,7 +27,7 @@ jobs:
             git config user.name "felipeweb"
       - run:
           name: deploy site
-          command: gh-pages --dotfiles --repo https://$GITHUB_TOKEN@github.com/felipeweb/felipeweb.dev.git --message "[skip ci] update site" --dist ./public
+          command: sudo gh-pages --dotfiles --repo https://$GITHUB_TOKEN@github.com/felipeweb/felipeweb.dev.git --message "[skip ci] update site" --dist ./public
 workflows:
   version: 2
   build:
