@@ -6,7 +6,6 @@
         <nav class="">
           <ul>
             <li><a href="#hello">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
             {{ range .Site.Sections }}
             <li><a href="{{ .Permalink }}#content" alt="content {{ .Title }}">{{ .Title }}</a></li>
             {{ end }}
