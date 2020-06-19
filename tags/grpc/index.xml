@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GRPC on Felipeweb</title>
+    <link>https://felipeweb.dev/tags/grpc/</link>
+    <description>Recent content in GRPC on Felipeweb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://felipeweb.dev/tags/grpc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GRPC Gateway - TDC SP 2018</title>
+      <link>https://felipeweb.dev/talk/grpc/</link>
+      <pubDate>Sat, 21 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/grpc/</guid>
+      <description>Nessa talk eu falei sobre GRPC Gateway veja os slides  </description>
+    </item>
+    
+  </channel>
+</rss>

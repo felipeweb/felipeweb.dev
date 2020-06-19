@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Felipeweb</title>
+    <link>https://felipeweb.dev/</link>
+    <description>Recent content on Felipeweb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://felipeweb.dev/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Open Cloud - Go Meetup C6 Bank</title>
+      <link>https://felipeweb.dev/talk/open-cloud/</link>
+      <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/open-cloud/</guid>
+      <description>Nessa talk eu mostrei como escrever um código agnóstico ao provdor de nuvem usando a linguagem Go veja os slides e o video    </description>
+    </item>
+    
+    <item>
+      <title>Deployando seu site em Hugo no Github Pages com Circle CI</title>
+      <link>https://felipeweb.dev/post/deployando-site-hugo-automaticamente-com-circleci-no-ghpages/</link>
+      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/post/deployando-site-hugo-automaticamente-com-circleci-no-ghpages/</guid>
+      <description>Hoje vamos ver como automatizar o deploy de um site em Hugo no Github Pages com Circle CI, serão 2 passos o de gerar o site e o de fazer deploy.
+Definindo o workflow workflows: version: 2 build: jobs: - build - deploy: requires: - build filters: branches: only: master Além definir os 2 passos colocamos filtros para que o passo de deploy aconteça somente quando fizermos commit na branch master e se o passo de build finalizar com sucesso.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL &#43; Rest = pREST - PgConf 2018</title>
+      <link>https://felipeweb.dev/talk/prest-pgconf/</link>
+      <pubDate>Sat, 04 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/prest-pgconf/</guid>
+      <description>Nessa talk eu falei sobre o pREST junto com Fabrizio Mello veja os slides  </description>
+    </item>
+    
+    <item>
+      <title>GRPC Gateway - TDC SP 2018</title>
+      <link>https://felipeweb.dev/talk/grpc/</link>
+      <pubDate>Sat, 21 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/grpc/</guid>
+      <description>Nessa talk eu falei sobre GRPC Gateway veja os slides  </description>
+    </item>
+    
+    <item>
+      <title>Context, como usar? - Gophercon Brasil 2017</title>
+      <link>https://felipeweb.dev/talk/context/</link>
+      <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/context/</guid>
+      <description>Nessa talk eu mostrei como usar o package context veja os slides  </description>
+    </item>
+    
+    <item>
+      <title>Testes avançados em Go - TDC POA 2017</title>
+      <link>https://felipeweb.dev/talk/testes-avancados/</link>
+      <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/testes-avancados/</guid>
+      <description>Nessa talk eu mostrei como testar diferentes cenários e escrever um código testável em Go veja os slides  </description>
+    </item>
+    
+    <item>
+      <title>pREST a RESTful API from any PostgreSQL database, How to use - Go Metup</title>
+      <link>https://felipeweb.dev/talk/como-usar-o-prest/</link>
+      <pubDate>Tue, 18 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/como-usar-o-prest/</guid>
+      <description>Nessa talk eu dei um overview de como usamos o pREST na Nuveo e mostrei o case da Filmow veja os slides  </description>
+    </item>
+    
+    <item>
+      <title>Go 1.8 plugins e outras novidades - Go 1.8 Release Party</title>
+      <link>https://felipeweb.dev/talk/plugins/</link>
+      <pubDate>Thu, 16 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/plugins/</guid>
+      <description>Nessa talk eu e o Cesar Gimenes fizemos uma demonstração de como usar plugins, uma funcionalidade na linguagem Go disponivel a partitr da versão 1.8 veja os slides  </description>
+    </item>
+    
+    <item>
+      <title>Gerando chave SSH com Go</title>
+      <link>https://felipeweb.dev/post/gerando-ssh-key/</link>
+      <pubDate>Sun, 12 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/post/gerando-ssh-key/</guid>
+      <description>O post de hoje será diferente será um tutorial de como gerar uma chave SSH usando apenas Go.
+O pessoal da própria linguagem Go criou um package que nos auxilia nas operações com SSH o golang.org/x/crypto/ssh, mas esse package não está na stdlib da linguagem então precisamos baixar usando o go get.
+go get -u golang.org/x/crypto/ssh Para gerar uma chave SSH publica, a que usamos para nos conectar em nossos servidores ou se conectar aos repositórios do Github, precisamos antes gerar uma chave privada, pois essa chave publica é gerada a partir de uma chave privada.</description>
+    </item>
+    
+    <item>
+      <title>The story behind the Mercurius framework</title>
+      <link>https://felipeweb.dev/post/mercurius-story/</link>
+      <pubDate>Wed, 16 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/post/mercurius-story/</guid>
+      <description>In August of this year, I went to a Go metup here in Brazil more specifically in São Paulo to talk a bit about my experiences with GopherJS (a compiler from Go to JavaScript). When it was over, Jeff Prestes came to me and ask for help to migrate his statup applications to Go. At that moment I was very happy because although I was studying Go a little over a year and a half ago, I had never worked professionally with the language, and then said that i could help.</description>
+    </item>
+    
+    <item>
+      <title>pREST a RESTful API from any PostgreSQL database, How to use - Go Metup</title>
+      <link>https://felipeweb.dev/talk/prest/</link>
+      <pubDate>Tue, 15 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/prest/</guid>
+      <description>Nessa talk eu dei um overview do pREST veja os slides  </description>
+    </item>
+    
+    <item>
+      <title>Criando aplicações robustas com Macaron - Go Metup</title>
+      <link>https://felipeweb.dev/talk/criando-app-robustas-com-macaron/</link>
+      <pubDate>Sat, 08 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/criando-app-robustas-com-macaron/</guid>
+      <description>Nessa talk eu e o Jeff Prestes fazemos um overview pelo Macaron framework veja os slides e os códigos  </description>
+    </item>
+    
+    <item>
+      <title>Escrevendo Go no front-end com GopherJS - Ruby Conf 2016</title>
+      <link>https://felipeweb.dev/talk/escrevendo-go-no-front-end-com-gopherjs-rubyconf2016/</link>
+      <pubDate>Tue, 16 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/escrevendo-go-no-front-end-com-gopherjs-rubyconf2016/</guid>
+      <description>O GopherJS é um compilador de Go para JavaScript, mas quais são os beneficios e maleficios que nós desenvolvedores temos com uso do GopherJS? veja os slides e os códigos  </description>
+    </item>
+    
+    <item>
+      <title>Escrevendo Go no front-end com GopherJS - Ruby Conf 2016</title>
+      <link>https://felipeweb.dev/talk/escrevendo-go-no-front-end-com-gopherjs/</link>
+      <pubDate>Tue, 16 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/escrevendo-go-no-front-end-com-gopherjs/</guid>
+      <description>O GopherJS é um compilador de Go para JavaScript, mas quais são os beneficios e maleficios que nós desenvolvedores temos com uso do GopherJS? veja os slides e os códigos  </description>
+    </item>
+    
+    <item>
+      <title>Tchau Ghost. Oi Hugo!</title>
+      <link>https://felipeweb.dev/post/tchau-ghost-oi-hugo/</link>
+      <pubDate>Sun, 10 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/post/tchau-ghost-oi-hugo/</guid>
+      <description>Ontem lancei um novo design para o site e junto com esse novo design também houve a mudança de plataforma da Ghost para Hugo.
+Por que a mudança? Apesar de a Ghost ser uma ótima de blog o que mais me incomodava nela e em outas plataformas é o fato de precisar ter internet para poder escrever, porque o tempo que tenho para esever na maioria das vezes não tenho acesso a wi-fi somente o 3G que não é de boa qualidade, então a solução para eu poder escrever offline foi usar geradores de sites estáticos.</description>
+    </item>
+    
+    <item>
+      <title>Por que só o go get não é suficiente para gerenciar as dependências em Go?</title>
+      <link>https://felipeweb.dev/post/por-que-so-o-go-get-nao-e-suficiente-para-gerenciar-as-dependencias-em-go/</link>
+      <pubDate>Tue, 21 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/post/por-que-so-o-go-get-nao-e-suficiente-para-gerenciar-as-dependencias-em-go/</guid>
+      <description>A linguagem Go tem uma gama de CLIs que facilitam a vida do desenvolvedor, uma das mais usadas com toda certeza é o get.
+go get &amp;lt;url do pacote sem o protocolo&amp;gt; O get é responsável por baixar os pacotes, bibliotecas que nossos projetos em Go, ele utiliza controle de versão para baixar os pacotes, então para usarmos o get além do Go precisamos ter algum sistema de controle de versão, como por exemplo o git, instalado em nossa máquina.</description>
+    </item>
+    
+    <item>
+      <title>Writing Go on front-end with GopherJS</title>
+      <link>https://felipeweb.dev/post/writing-go-in-front-end-with-gopherjs/</link>
+      <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/post/writing-go-in-front-end-with-gopherjs/</guid>
+      <description>It is increasingly common backend languages have a compiler for javaScript, enabling us to use the same code in the backend and in the browser.
+Clojure, Scala and kotlin already support to compile your code for JavaScript, in Go it&amp;rsquo;s completely possible too.
+In this post we will see how to do it.
+1) We need to download the GopherJS to our GOPATH go get -u github.com/gopherjs/gopherjs 2) We need to write our Go code that we want to compile for JavaScript package main import ( &amp;#34;github.</description>
+    </item>
+    
+  </channel>
+</rss>

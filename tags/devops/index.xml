@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Devops on Felipeweb</title>
+    <link>https://felipeweb.dev/tags/devops/</link>
+    <description>Recent content in Devops on Felipeweb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://felipeweb.dev/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Deployando seu site em Hugo no Github Pages com Circle CI</title>
+      <link>https://felipeweb.dev/post/deployando-site-hugo-automaticamente-com-circleci-no-ghpages/</link>
+      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/post/deployando-site-hugo-automaticamente-com-circleci-no-ghpages/</guid>
+      <description>Hoje vamos ver como automatizar o deploy de um site em Hugo no Github Pages com Circle CI, serão 2 passos o de gerar o site e o de fazer deploy.
+Definindo o workflow workflows: version: 2 build: jobs: - build - deploy: requires: - build filters: branches: only: master Além definir os 2 passos colocamos filtros para que o passo de deploy aconteça somente quando fizermos commit na branch master e se o passo de build finalizar com sucesso.</description>
+    </item>
+    
+  </channel>
+</rss>

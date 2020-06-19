@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Felipeweb</title>
+    <link>https://felipeweb.dev/tags/</link>
+    <description>Recent content in Tags on Felipeweb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://felipeweb.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>cloud</title>
+      <link>https://felipeweb.dev/tags/cloud/</link>
+      <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloud computing</title>
+      <link>https://felipeweb.dev/tags/cloud-computing/</link>
+      <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/tags/cloud-computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>https://felipeweb.dev/tags/golang/</link>
+      <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>open cloud</title>
+      <link>https://felipeweb.dev/tags/open-cloud/</link>
+      <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/tags/open-cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Devops</title>
+      <link>https://felipeweb.dev/tags/devops/</link>
+      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>prest</title>
+      <link>https://felipeweb.dev/tags/prest/</link>
+      <pubDate>Sat, 04 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/tags/prest/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GRPC</title>
+      <link>https://felipeweb.dev/tags/grpc/</link>
+      <pubDate>Sat, 21 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/tags/grpc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GopherJS</title>
+      <link>https://felipeweb.dev/tags/gopherjs/</link>
+      <pubDate>Tue, 16 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/tags/gopherjs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JavaScript</title>
+      <link>https://felipeweb.dev/tags/javascript/</link>
+      <pubDate>Tue, 16 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Front-end</title>
+      <link>https://felipeweb.dev/tags/front-end/</link>
+      <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/tags/front-end/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

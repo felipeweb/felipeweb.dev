@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GopherJS on Felipeweb</title>
+    <link>https://felipeweb.dev/tags/gopherjs/</link>
+    <description>Recent content in GopherJS on Felipeweb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 16 Aug 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://felipeweb.dev/tags/gopherjs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Escrevendo Go no front-end com GopherJS - Ruby Conf 2016</title>
+      <link>https://felipeweb.dev/talk/escrevendo-go-no-front-end-com-gopherjs-rubyconf2016/</link>
+      <pubDate>Tue, 16 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/escrevendo-go-no-front-end-com-gopherjs-rubyconf2016/</guid>
+      <description>O GopherJS é um compilador de Go para JavaScript, mas quais são os beneficios e maleficios que nós desenvolvedores temos com uso do GopherJS? veja os slides e os códigos  </description>
+    </item>
+    
+    <item>
+      <title>Escrevendo Go no front-end com GopherJS - Ruby Conf 2016</title>
+      <link>https://felipeweb.dev/talk/escrevendo-go-no-front-end-com-gopherjs/</link>
+      <pubDate>Tue, 16 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/escrevendo-go-no-front-end-com-gopherjs/</guid>
+      <description>O GopherJS é um compilador de Go para JavaScript, mas quais são os beneficios e maleficios que nós desenvolvedores temos com uso do GopherJS? veja os slides e os códigos  </description>
+    </item>
+    
+  </channel>
+</rss>

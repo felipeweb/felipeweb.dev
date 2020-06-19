@@ -1,0 +1,256 @@
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  
+
+
+
+<title>Gerando chave SSH com Go - Felipeweb</title>
+
+
+<meta name="keywords" content="golang">
+<link rel="amphtml" href="https://r.amply.cloud/?url=https%3a%2f%2ffelipeweb.dev%2fpost%2fgerando-ssh-key%2f">
+
+
+
+  <meta name="author" content="Felipeweb">
+  <base href="https://felipeweb.dev/">
+  <link rel="canonical" href="https://felipeweb.dev/post/gerando-ssh-key/">
+
+  <meta name="generator" content="Hugo 0.72.0" />
+
+  
+  
+  
+
+  
+  <link href="https://felipeweb.dev/css/main.css?hash=1592582709" rel="stylesheet">
+  <link href="https://felipeweb.dev/css/highlightjs-dracula.css?hash=1592582709" rel="stylesheet">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Inconsolata" rel="stylesheet">
+  <link href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css" rel="stylesheet">
+</head>
+
+<body lang="en-us">
+
+
+
+<div class="menu">
+  <div class="container">
+    <div class="row">
+      <div class="menu__wrapper d-none d-lg-block col-md-12">
+        <nav class="">
+          <ul>
+            <li><a href="#hello">Home</a></li>
+            
+            <li><a href="https://felipeweb.dev/talk/#content" alt="content Talks">Talks</a></li>
+            
+            <li><a href="https://felipeweb.dev/post/#content" alt="content Posts">Posts</a></li>
+            
+            <li><a href="https://felipeweb.dev/resume.pdf">Resume</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="menu__wrapper col-md-12 d-lg-none">
+        <button type="button" class="menu__mobile-button">
+          <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="mobile-menu d-lg-none">
+  <div class="container">
+    <div class="mobile-menu__close">
+      <span><i class="mdi mdi-close" aria-hidden="true"></i></span>
+    </div>
+    <nav class="mobile-menu__wrapper">
+      <ul>
+        <li><a href="#hello">Hello</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        
+        <li><a href="https://felipeweb.dev/talk/#content" alt="content Talks">Talks</a></li>
+        
+        <li><a href="https://felipeweb.dev/post/#content" alt="content Posts">Posts</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+
+<header class="background blog-header"></header>
+
+
+
+<div class="container">
+  <div class="article">
+    <div class="row">
+      <div class="col-md-12">
+        <a class="article__back-link" href="/"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>Back</a>
+
+        <h1 class="article__title">Gerando chave SSH com Go</h1>
+        <p class="article_date">
+	  Feb 12, 2017 | 2 minutes read
+	</p>
+	
+<p class="article__share">Share this post:
+  <a rel="nofollow" href="https://twitter.com/intent/tweet?text=Gerando%20chave%20SSH%20com%20Go https%3a%2f%2ffelipeweb.dev%2fpost%2fgerando-ssh-key%2f by @_felipeweb" target="_blank"><i class="fa fa-twitter-square"></i></a>
+  <a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ffelipeweb.dev%2fpost%2fgerando-ssh-key%2f"><i class="fa fa-facebook-square"></i></a>
+  <a rel="nofollow" href="https://www.linkedin.com/cws/share?url=https%3a%2f%2ffelipeweb.dev%2fpost%2fgerando-ssh-key%2f"><i class="fa fa-linkedin-square"></i></a>
+  <a rel="nofollow" href="https://plus.google.com/share?url=https%3a%2f%2ffelipeweb.dev%2fpost%2fgerando-ssh-key%2f"><i class="fa fa-google-plus-square"></i></a>
+  <a rel="nofollow" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2ffelipeweb.dev%2fpost%2fgerando-ssh-key%2f"><i class="fa fa-pinterest-square"></i></a>
+</p>
+
+
+
+	<p>O post de hoje será diferente será um tutorial de como gerar uma chave SSH usando apenas Go.</p>
+<p>O pessoal da própria linguagem Go criou um package que nos auxilia nas operações com SSH
+o <code>golang.org/x/crypto/ssh</code>, mas esse package não está na stdlib da linguagem então
+precisamos baixar usando o <code>go get</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">go get -u golang.org/x/crypto/ssh
+</code></pre></div><p>Para gerar uma chave SSH publica, a que usamos para nos conectar em nossos servidores
+ou se conectar aos repositórios do Github, precisamos antes gerar uma chave privada,
+pois essa chave publica é gerada a partir de uma chave privada.</p>
+<p>Essa chave privada pode ser de quantos bits quisermos, a quantidade de bits mais usada
+é <code>4096</code>, essa é a quantidade de bits recomendada pelo Github, para gerarmos a chave de
+conexão com Github.</p>
+<p>Então vamos lá gerar nossa chave privada:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">generatePrivateKey</span>(<span style="color:#a6e22e">bits</span> <span style="color:#66d9ef">int</span>) (<span style="color:#a6e22e">privateKey</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">rsa</span>.<span style="color:#a6e22e">PrivateKey</span>, <span style="color:#a6e22e">err</span> <span style="color:#66d9ef">error</span>) {
+	<span style="color:#a6e22e">privateKey</span>, <span style="color:#a6e22e">_</span> = <span style="color:#a6e22e">rsa</span>.<span style="color:#a6e22e">GenerateKey</span>(<span style="color:#a6e22e">rand</span>.<span style="color:#a6e22e">Reader</span>, <span style="color:#a6e22e">bits</span>)
+	<span style="color:#a6e22e">privateKeyDer</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">x509</span>.<span style="color:#a6e22e">MarshalPKCS1PrivateKey</span>(<span style="color:#a6e22e">privateKey</span>)
+	<span style="color:#a6e22e">privateKeyBlock</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">pem</span>.<span style="color:#a6e22e">Block</span>{
+		<span style="color:#a6e22e">Type</span>:    <span style="color:#e6db74">&#34;RSA PRIVATE KEY&#34;</span>,
+		<span style="color:#a6e22e">Headers</span>: <span style="color:#66d9ef">nil</span>,
+		<span style="color:#a6e22e">Bytes</span>:   <span style="color:#a6e22e">privateKeyDer</span>,
+	}
+	<span style="color:#a6e22e">privateKeyPem</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">pem</span>.<span style="color:#a6e22e">EncodeToMemory</span>(<span style="color:#f92672">&amp;</span><span style="color:#a6e22e">privateKeyBlock</span>)
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;PRIVATE KEY:&#34;</span>, string(<span style="color:#a6e22e">privateKeyPem</span>))
+	<span style="color:#66d9ef">return</span>
+}
+</code></pre></div><p>Agora que já temos nossa chave privada podemos gerar a publica a partir dela.</p>
+<p>Então vamos gera-lá:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">generatePublicKey</span>(<span style="color:#a6e22e">privateKey</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">rsa</span>.<span style="color:#a6e22e">PrivateKey</span>) (<span style="color:#a6e22e">err</span> <span style="color:#66d9ef">error</span>) {
+	<span style="color:#a6e22e">publicKey</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">privateKey</span>.<span style="color:#a6e22e">PublicKey</span>
+	<span style="color:#a6e22e">pub</span>, <span style="color:#a6e22e">_</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">ssh</span>.<span style="color:#a6e22e">NewPublicKey</span>(<span style="color:#f92672">&amp;</span><span style="color:#a6e22e">publicKey</span>)
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;PUBLIC KEY:&#34;</span>, string(<span style="color:#a6e22e">ssh</span>.<span style="color:#a6e22e">MarshalAuthorizedKey</span>(<span style="color:#a6e22e">pub</span>)))
+	<span style="color:#66d9ef">return</span>
+}
+</code></pre></div><p>A função <code>ssh.MarshalAuthorizedKey</code> coloca a nossa chave no padrão usado pelo <code>OpenSSH</code>,
+que é o padrão aceito pelo Github, Digital Ocean e muitos outros lugares que aceitam
+conexão via SSH.</p>
+<p>A nossa chave SSH está pronta para uso. Com isso terminamos o tutorial espero que tenham
+gostado. Todo o código para este tutorial se encontra em meu <a href="https://github.com/felipeweb/blog-posts/tree/master/ssh">Github</a>, Abraços e até a proxima.</p>
+
+
+	
+<p class="article__share">Share this post:
+  <a rel="nofollow" href="https://twitter.com/intent/tweet?text=Gerando%20chave%20SSH%20com%20Go https%3a%2f%2ffelipeweb.dev%2fpost%2fgerando-ssh-key%2f by @_felipeweb" target="_blank"><i class="fa fa-twitter-square"></i></a>
+  <a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ffelipeweb.dev%2fpost%2fgerando-ssh-key%2f"><i class="fa fa-facebook-square"></i></a>
+  <a rel="nofollow" href="https://www.linkedin.com/cws/share?url=https%3a%2f%2ffelipeweb.dev%2fpost%2fgerando-ssh-key%2f"><i class="fa fa-linkedin-square"></i></a>
+  <a rel="nofollow" href="https://plus.google.com/share?url=https%3a%2f%2ffelipeweb.dev%2fpost%2fgerando-ssh-key%2f"><i class="fa fa-google-plus-square"></i></a>
+  <a rel="nofollow" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2ffelipeweb.dev%2fpost%2fgerando-ssh-key%2f"><i class="fa fa-pinterest-square"></i></a>
+</p>
+
+
+
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "felipewebcloud" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="background">
+  <div id="contact" class="container section">
+    <div class="row contacts">
+      <div class="col-lg-12">
+        <div class="footer">
+
+          
+<p class="personal-profile__social">
+  <a rel="nofollow" href="https://github.com/felipeweb" target="_blank"><i class="fa fa-github-square"></i></a>
+  
+  <a rel="nofollow" href="https://twitter.com/_felipeweb" target="_blank"><i class="fa fa-twitter-square"></i></a>
+  
+  <a rel="nofollow" href="https://linkedin.com/in/felipewebcloud" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+  
+</p>
+
+
+
+          
+          <p>written by Felipeweb</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+  integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/languages/go.min.js"></script>
+
+
+<script src="https://felipeweb.dev/js/menu.js?hash=1592582709"></script>
+<script src="https://felipeweb.dev/js/progress-list.js?hash=1592582709"></script>
+<script src="https://felipeweb.dev/js/section.js?hash=1592582709"></script>
+<script src="https://felipeweb.dev/js/mobile-menu.js?hash=1592582709"></script>
+<script src="https://felipeweb.dev/js/mbclicker.min.js?hash=1592582709"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-57220118-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>

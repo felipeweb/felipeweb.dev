@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on Felipeweb</title>
+    <link>https://felipeweb.dev/tags/javascript/</link>
+    <description>Recent content in JavaScript on Felipeweb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 16 Aug 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://felipeweb.dev/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Escrevendo Go no front-end com GopherJS - Ruby Conf 2016</title>
+      <link>https://felipeweb.dev/talk/escrevendo-go-no-front-end-com-gopherjs-rubyconf2016/</link>
+      <pubDate>Tue, 16 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/escrevendo-go-no-front-end-com-gopherjs-rubyconf2016/</guid>
+      <description>O GopherJS é um compilador de Go para JavaScript, mas quais são os beneficios e maleficios que nós desenvolvedores temos com uso do GopherJS? veja os slides e os códigos  </description>
+    </item>
+    
+    <item>
+      <title>Escrevendo Go no front-end com GopherJS - Ruby Conf 2016</title>
+      <link>https://felipeweb.dev/talk/escrevendo-go-no-front-end-com-gopherjs/</link>
+      <pubDate>Tue, 16 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/escrevendo-go-no-front-end-com-gopherjs/</guid>
+      <description>O GopherJS é um compilador de Go para JavaScript, mas quais são os beneficios e maleficios que nós desenvolvedores temos com uso do GopherJS? veja os slides e os códigos  </description>
+    </item>
+    
+    <item>
+      <title>Writing Go on front-end with GopherJS</title>
+      <link>https://felipeweb.dev/post/writing-go-in-front-end-with-gopherjs/</link>
+      <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/post/writing-go-in-front-end-with-gopherjs/</guid>
+      <description>It is increasingly common backend languages have a compiler for javaScript, enabling us to use the same code in the backend and in the browser.
+Clojure, Scala and kotlin already support to compile your code for JavaScript, in Go it&amp;rsquo;s completely possible too.
+In this post we will see how to do it.
+1) We need to download the GopherJS to our GOPATH go get -u github.com/gopherjs/gopherjs 2) We need to write our Go code that we want to compile for JavaScript package main import ( &amp;#34;github.</description>
+    </item>
+    
+  </channel>
+</rss>

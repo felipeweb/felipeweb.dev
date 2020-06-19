@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>prest on Felipeweb</title>
+    <link>https://felipeweb.dev/tags/prest/</link>
+    <description>Recent content in prest on Felipeweb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Aug 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://felipeweb.dev/tags/prest/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PostgreSQL &#43; Rest = pREST - PgConf 2018</title>
+      <link>https://felipeweb.dev/talk/prest-pgconf/</link>
+      <pubDate>Sat, 04 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/prest-pgconf/</guid>
+      <description>Nessa talk eu falei sobre o pREST junto com Fabrizio Mello veja os slides  </description>
+    </item>
+    
+    <item>
+      <title>pREST a RESTful API from any PostgreSQL database, How to use - Go Metup</title>
+      <link>https://felipeweb.dev/talk/como-usar-o-prest/</link>
+      <pubDate>Tue, 18 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/como-usar-o-prest/</guid>
+      <description>Nessa talk eu dei um overview de como usamos o pREST na Nuveo e mostrei o case da Filmow veja os slides  </description>
+    </item>
+    
+    <item>
+      <title>pREST a RESTful API from any PostgreSQL database, How to use - Go Metup</title>
+      <link>https://felipeweb.dev/talk/prest/</link>
+      <pubDate>Tue, 15 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/prest/</guid>
+      <description>Nessa talk eu dei um overview do pREST veja os slides  </description>
+    </item>
+    
+  </channel>
+</rss>

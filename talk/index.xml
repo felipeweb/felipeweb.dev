@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks on Felipeweb</title>
+    <link>https://felipeweb.dev/talk/</link>
+    <description>Recent content in Talks on Felipeweb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://felipeweb.dev/talk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Open Cloud - Go Meetup C6 Bank</title>
+      <link>https://felipeweb.dev/talk/open-cloud/</link>
+      <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/open-cloud/</guid>
+      <description>Nessa talk eu mostrei como escrever um código agnóstico ao provdor de nuvem usando a linguagem Go veja os slides e o video    </description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL &#43; Rest = pREST - PgConf 2018</title>
+      <link>https://felipeweb.dev/talk/prest-pgconf/</link>
+      <pubDate>Sat, 04 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/prest-pgconf/</guid>
+      <description>Nessa talk eu falei sobre o pREST junto com Fabrizio Mello veja os slides  </description>
+    </item>
+    
+    <item>
+      <title>GRPC Gateway - TDC SP 2018</title>
+      <link>https://felipeweb.dev/talk/grpc/</link>
+      <pubDate>Sat, 21 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/grpc/</guid>
+      <description>Nessa talk eu falei sobre GRPC Gateway veja os slides  </description>
+    </item>
+    
+    <item>
+      <title>Context, como usar? - Gophercon Brasil 2017</title>
+      <link>https://felipeweb.dev/talk/context/</link>
+      <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/context/</guid>
+      <description>Nessa talk eu mostrei como usar o package context veja os slides  </description>
+    </item>
+    
+    <item>
+      <title>Testes avançados em Go - TDC POA 2017</title>
+      <link>https://felipeweb.dev/talk/testes-avancados/</link>
+      <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/testes-avancados/</guid>
+      <description>Nessa talk eu mostrei como testar diferentes cenários e escrever um código testável em Go veja os slides  </description>
+    </item>
+    
+    <item>
+      <title>pREST a RESTful API from any PostgreSQL database, How to use - Go Metup</title>
+      <link>https://felipeweb.dev/talk/como-usar-o-prest/</link>
+      <pubDate>Tue, 18 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/como-usar-o-prest/</guid>
+      <description>Nessa talk eu dei um overview de como usamos o pREST na Nuveo e mostrei o case da Filmow veja os slides  </description>
+    </item>
+    
+    <item>
+      <title>Go 1.8 plugins e outras novidades - Go 1.8 Release Party</title>
+      <link>https://felipeweb.dev/talk/plugins/</link>
+      <pubDate>Thu, 16 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/plugins/</guid>
+      <description>Nessa talk eu e o Cesar Gimenes fizemos uma demonstração de como usar plugins, uma funcionalidade na linguagem Go disponivel a partitr da versão 1.8 veja os slides  </description>
+    </item>
+    
+    <item>
+      <title>pREST a RESTful API from any PostgreSQL database, How to use - Go Metup</title>
+      <link>https://felipeweb.dev/talk/prest/</link>
+      <pubDate>Tue, 15 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/prest/</guid>
+      <description>Nessa talk eu dei um overview do pREST veja os slides  </description>
+    </item>
+    
+    <item>
+      <title>Criando aplicações robustas com Macaron - Go Metup</title>
+      <link>https://felipeweb.dev/talk/criando-app-robustas-com-macaron/</link>
+      <pubDate>Sat, 08 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/criando-app-robustas-com-macaron/</guid>
+      <description>Nessa talk eu e o Jeff Prestes fazemos um overview pelo Macaron framework veja os slides e os códigos  </description>
+    </item>
+    
+    <item>
+      <title>Escrevendo Go no front-end com GopherJS - Ruby Conf 2016</title>
+      <link>https://felipeweb.dev/talk/escrevendo-go-no-front-end-com-gopherjs-rubyconf2016/</link>
+      <pubDate>Tue, 16 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/escrevendo-go-no-front-end-com-gopherjs-rubyconf2016/</guid>
+      <description>O GopherJS é um compilador de Go para JavaScript, mas quais são os beneficios e maleficios que nós desenvolvedores temos com uso do GopherJS? veja os slides e os códigos  </description>
+    </item>
+    
+    <item>
+      <title>Escrevendo Go no front-end com GopherJS - Ruby Conf 2016</title>
+      <link>https://felipeweb.dev/talk/escrevendo-go-no-front-end-com-gopherjs/</link>
+      <pubDate>Tue, 16 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/escrevendo-go-no-front-end-com-gopherjs/</guid>
+      <description>O GopherJS é um compilador de Go para JavaScript, mas quais são os beneficios e maleficios que nós desenvolvedores temos com uso do GopherJS? veja os slides e os códigos  </description>
+    </item>
+    
+  </channel>
+</rss>

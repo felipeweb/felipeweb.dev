@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>open cloud on Felipeweb</title>
+    <link>https://felipeweb.dev/tags/open-cloud/</link>
+    <description>Recent content in open cloud on Felipeweb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://felipeweb.dev/tags/open-cloud/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Open Cloud - Go Meetup C6 Bank</title>
+      <link>https://felipeweb.dev/talk/open-cloud/</link>
+      <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipeweb.dev/talk/open-cloud/</guid>
+      <description>Nessa talk eu mostrei como escrever um código agnóstico ao provdor de nuvem usando a linguagem Go veja os slides e o video    </description>
+    </item>
+    
+  </channel>
+</rss>
