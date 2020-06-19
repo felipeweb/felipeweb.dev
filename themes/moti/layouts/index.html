@@ -33,12 +33,12 @@
 
   <div class="portfolio-cards">
 
-    {{ range .Site.Params.Projects }}
+    {{ range $project := .Site.Params.Projects }}
     <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="web-sites">
       <div class="col-md-12 project-card__info">
-        <h3 class="project-card__title">{{ .Name }}</h3>
-        <p class="project-card__description">{{ .Desc }}</p>
-        <a ref="nofollow" href="{{ .Link }}" target="_blank" class="project-card__link">{{ .Link }}</a>
+        <h3 class="project-card__title">{{ index $project "name" }}</h3>
+        <p class="project-card__description">{{ index $project "desc" }}</p>
+        <a ref="nofollow" href="{{ $project.Link }}" target="_blank" class="project-card__link">{{ index $project "Link" }}</a>
       </div>
     </div>
     {{ end }}
@@ -69,7 +69,7 @@
             {{ if isset .Params "tags" }}
             <ul class="tags">
               {{ range first 2 .Params.Tags }}
-              <li><a class="meta" href='{{ "/tags/" | relURL }}{{ . | urlize }}'>{{ . }}</a></li>
+              <li><a class="meta" href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a></li>
               {{ end }}
             </ul>
             {{ end }}
@@ -105,7 +105,7 @@
             {{ if isset .Params "tags" }}
             <ul class="tags">
               {{ range first 2 .Params.Tags }}
-              <li><a class="meta" href='{{ "/tags/" | relURL }}{{ . | urlize }}'>{{ . }}</a></li>
+              <li><a class="meta" href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a></li>
               {{ end }}
             </ul>
             {{ end }}

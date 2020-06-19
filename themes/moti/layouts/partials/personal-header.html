@@ -12,7 +12,7 @@
 	  {{ range $info := .Site.Params.Info }}
 	  <dt>{{ index $info "label" }}:</dt>
 	  <dd>
-	    {{ if isset $info "link" }}<a href="{{ index $info "link" }}">{{ end }}
+	    {{ if isset $info "link" }}<a href='{{ index $info "link" }}'>{{ end }}
 	    {{ index $info "value" }}
 	    {{ if isset $info "link" }}</a>{{ end }}
 	  </dd>
