@@ -74,26 +74,28 @@
   </div>
 
   <div class="row post-cards">
-    {{$post := where .Data.Pages.ByPublishDate.Reverse "Section" "post" }}
-    {{ range first 3 $post }}
+    {{ range first 3 .Data.Pages.ByPublishDate.Reverse }}
+    {{ if eq .Section "talk" }}
     <div class="col-md-4">
-      <a href="posts.html">
+      <a href="talk.html">
         <div class="post-cards__card">
           <div class="post-cards__info">
             <p class="post-cards__date">{{ .Date.Format .Site.Params.dateform }}</p>
             <h3 class="post-cards_title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-            {{ if isset .Params "tags" }}
-            <ul class="tags">
-              {{ range first 2 .Params.Tags }}
-              <li><a class="meta" href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a></li>
-              {{ end }}
-            </ul>
-            {{ end }}
+	    {{ if isset .Params "tags" }}
+	    <ul class="tags">
+	      {{ range first 2 .Params.Tags }}
+	      <li><a class="meta" href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a></li>
+	      {{ end }}
+	    </ul>
+	    {{ end }}
           </div>
         </div>
       </a>
     </div>
     {{ end }}
+    {{ end }}
+
 
   </div>
 </section>
@@ -110,25 +112,26 @@
   </div>
 
   <div class="row post-cards">
-    {{$talk := where .Data.Pages.ByPublishDate.Reverse "Section" "talk" }}
-    {{ range first 3 $talk }}
+    {{ range first 3 .Data.Pages.ByPublishDate.Reverse }}
+    {{ if eq .Section "post" }}
     <div class="col-md-4">
-      <a href="talks.html">
+      <a href="post.html">
         <div class="post-cards__card">
           <div class="post-cards__info">
             <p class="post-cards__date">{{ .Date.Format .Site.Params.dateform }}</p>
             <h3 class="post-cards_title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-            {{ if isset .Params "tags" }}
-            <ul class="tags">
-              {{ range first 2 .Params.Tags }}
-              <li><a class="meta" href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a></li>
-              {{ end }}
-            </ul>
-            {{ end }}
+	    {{ if isset .Params "tags" }}
+	    <ul class="tags">
+	      {{ range first 2 .Params.Tags }}
+	      <li><a class="meta" href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a></li>
+	      {{ end }}
+	    </ul>
+	    {{ end }}
           </div>
         </div>
       </a>
     </div>
+    {{ end }}
     {{ end }}
 
   </div>
