@@ -22,7 +22,7 @@ jobs:
       - run:
           name: Install and configure dependencies
           command: |
-            sudo npm install -g gh-pages
+            sudo npm install -g -D gh-pages@2.0
             git config user.email "fpo@felipeweb.dev"
             git config user.name "felipeweb"
       - run:
